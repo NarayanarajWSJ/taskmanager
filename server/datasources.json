@@ -7,6 +7,7 @@
     "host": "ec2-54-243-213-188.compute-1.amazonaws.com",
     "port": 5432,
     "url": "",
+    "ssl":true,
     "database": "d7mi1379rkdtmf",
     "password": "71c591252906466e08e6e395b2e651ef12c642b3f981c79ca4a25a11c8d68f64",
     "name": "postgres",

@@ -41,12 +41,12 @@
       "foreignKey": "taskgroupid"
     },
     "assigneduser": {
-      "type": "hasOne",
+      "type": "belongsTo",
       "model": "taskuser",
       "foreignKey": "assigneduserid"
     },
     "allocateduser": {
-      "type": "hasOne",
+      "type": "belongsTo",
       "model": "taskuser",
       "foreignKey": "allocateduserid"
     }
