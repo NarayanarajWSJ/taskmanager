@@ -34,8 +34,8 @@ var Schemas = ["taskuser","group","groupusers","tasks"];
 //   console.log(res);
 // }
 
-ds.isActual("tasks", function(err) {
-  ds.autoupdate("tasks", function(err) {
+ds.isActual("taskuser", function(err) {
+  ds.autoupdate("taskuser", function(err) {
     if (err){ 
       console.log(err)
       throw err;
