@@ -1,0 +1,24 @@
+{
+  "name": "groupusers",
+  "base": "baseModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {
+    "groupid": {
+      "type": "belongsTo",
+      "model": "group",
+      "foreignKey": "groupid"
+    },
+    "groupusers": {
+      "type": "belongsTo",
+      "model": "taskuser",
+      "foreignKey": "taskuserid"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

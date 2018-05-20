@@ -1,0 +1,56 @@
+{
+  "name": "tasks",
+  "base": "baseModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "taskname": {
+      "type": "string",
+      "required": true
+    },
+    "taskdescription": {
+      "type": "string",
+      "required": true
+    },
+    "status": {
+      "type": "number",
+      "required": true
+    },
+    "assigneddate": {
+      "type": "date",
+      "required": true
+    },
+    "completiondate": {
+      "type": "date"
+    },
+    "feedback": {
+      "type": "string"
+    },
+    "isprivatetask": {
+      "type": "boolean",
+      "default" : false
+    }
+  },
+  "validations": [],
+  "relations": {
+    "taskgroup": {
+      "type": "belongsTo",
+      "model": "group",
+      "foreignKey": "taskgroupid"
+    },
+    "assigneduser": {
+      "type": "hasOne",
+      "model": "taskuser",
+      "foreignKey": "assigneduserid"
+    },
+    "allocateduser": {
+      "type": "hasOne",
+      "model": "taskuser",
+      "foreignKey": "allocateduserid"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
