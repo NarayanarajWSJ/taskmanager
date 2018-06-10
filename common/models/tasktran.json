@@ -1,0 +1,28 @@
+{
+  "name": "tasktran",
+  "base": "baseModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "taskid": {
+      "type": "number",
+      "required": true
+    },
+    "userid": {
+      "type": "number",
+      "required": true
+    },
+    "status": {
+      "type": "string"
+    },
+    "comments": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

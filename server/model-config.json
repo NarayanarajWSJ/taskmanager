@@ -55,5 +55,13 @@
   "groupusers": {
     "dataSource": "postgres",
     "public": true
+  },
+  "comments": {
+    "dataSource": "postgres",
+    "public": true
+  },
+  "tasktran": {
+    "dataSource": "postgres",
+    "public": true
   }
 }
